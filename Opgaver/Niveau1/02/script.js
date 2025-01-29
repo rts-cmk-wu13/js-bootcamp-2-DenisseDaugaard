@@ -1,4 +1,5 @@
 let showResult = document.querySelector(".result")
+let showResult2 = document.querySelector(".result2")
 
 function div(a,b){
 
@@ -19,4 +20,4 @@ let outerResult2 = begregneForhold2(4,0)
 console.log(outerResult2);
 
 
-// showResult.textContent = outerResult
+showResult2.textContent = outerResult2
