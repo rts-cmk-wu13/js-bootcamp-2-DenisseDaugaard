@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: 5rem;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure {
+    height: 15rem;
+    width: 15rem;
+}
+
+
+
+.shop__item figure{
+    height: 20rem;
+    box-shadow: 1px -1px 5px #8C8987;
+}
+
+.gypsy__item__category{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 5rem;
+}
+
+.shop__item figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shop__item__description>*{
+    margin-top: 1rem;
+}
+
+.shop__item__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.shop__item__description span{
+    align-self: flex-end;
+}
+
+.purchase__btn{
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: #E4BEB0;
+    color: white;
+    font-weight: 600;
+    font-size: var(--xl-font-size);
+}
+
+.title__subcategory{
+    display: inline;
+   margin-left: 43%;
+}
+
+/*-------------shopping Cart----------------------- */
+
+.shopping__cart{
+    position: absolute;
+    z-index: 1;
+    right:0;
+    bottom: -20rem;
+    background-color: var(--backgrund-color);
+    width:50%;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--grey-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem;
+    border-radius: 0.25rem;
+}
+
+.shopping__cart .total,
+.shopping__cart button{
+   margin-left: auto;
+}
+
+.shopping__cart button{
+    background-color: transparent;
+    border: none;
+}
+
+.shopping__cart--hidden{
+    display:none;
+}
+
+.cart__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+
+.cart__item__img {
+   width: 4rem;
+   height: 4rem;
+   border: 1px solid var(--font-color);
+}
+
+.cart__item__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart__item__quantity{
+   width: 2rem;
+   text-align: center;
+}
+
+.cart__item__delete .fa-trash-can{
+    color: var(--light-red-color);
+}
+
+
+.hide__notification{
+    display: none;
+}
