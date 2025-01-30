@@ -52,3 +52,7 @@ label {
 #buttons button:focus {
 	outline: none;
 }
+
+.active {
+	background-color: lightgreen;
+}
