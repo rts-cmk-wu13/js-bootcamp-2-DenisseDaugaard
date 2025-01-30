@@ -59,9 +59,7 @@ figure {
     align-self: flex-end;
 }
 
-
-.title__subcategory{
-    display: inline;
-   margin-left: 43%;
+.total {
+    color: rgb(244, 94, 94);
+    font-weight: bold;
 }
-
