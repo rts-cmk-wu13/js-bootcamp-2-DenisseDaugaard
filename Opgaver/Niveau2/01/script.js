@@ -9,5 +9,5 @@ buttons.forEach(btn => {
 function changeColor(event) {
     buttons.forEach(btn => btn.style.backgroundColor = ""); // her all the buttons are the defult color
 
-    event.target.style.backgroundColor = "green"; // her we change the color with event.target
+    event.target.style.backgroundColor = "#90ee90"; // her we change the color with event.target
 }
